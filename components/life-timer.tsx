@@ -37,8 +37,8 @@ export function LifeTimer() {
   };
 
   return (
-    <div className="relative max-w-[95vw] mx-auto">
-      <h2 className="text-9xl md:text-8xl font-light mb-48 mt-96 tracking-tight">
+    <div className="relative max-w-[300vw] items-center justify-center flex flex-col">
+      <h2 className="text-8xl md:text-8xl font-light mb-48 mt-96 tracking-tight">
         YOU HAVE A LIFE TO LIVE
       </h2>
       {!showResult ? (

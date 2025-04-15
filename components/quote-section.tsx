@@ -69,9 +69,9 @@ export function QuoteSection() {
         <h2 className="text-5xl md:text-7xl font-light mb-16 text-center tracking-tight text-black bg-clip-text bg-gradient-to-r from-gray-300 to-gray-100">
           Words of Wisdom
         </h2>
-        <div className="relative  backdrop-blur-lg rounded-2xl p-8 md:p-12 border border-white/10 shadow-xl">
+        <div className="relative rounded-2xl p-8 md:p-12 border">
           <div className="text-center space-y-8">
-            <blockquote className="text-3xl md:text-5xl font-light italic leading-tight text-black">
+            <blockquote className="text-5xl font-light italic leading-tight text-black">
               "{currentQuote.text}"
             </blockquote>
             <cite className="block text-xl md:text-2xl text-black">
@@ -81,7 +81,7 @@ export function QuoteSection() {
               <Button 
                 onClick={getRandomQuote} 
                 size="lg"
-                className="rounded-2xl h-14 w-full p-2"
+                className="rounded-2xl h-14 w-max"
               >
                 <RefreshCw className="h-5 w-5 mr-2 transition-transform group-hover:rotate-180" />
                 New Quote
